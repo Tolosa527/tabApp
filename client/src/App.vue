@@ -20,4 +20,11 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+.v-btn__content{
+  color:white;
+}
+.v-toolbar__title{
+  font-style: italic;
+  font-weight: bold;
+}
 </style>
