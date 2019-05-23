@@ -1,13 +1,18 @@
 <template>
   <div id="app">
+    <page-header />
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
   </div>
 </template>
 
 <script>
+import PageHeader from '@/components/Header.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    PageHeader
+  }
 }
 </script>
 
@@ -18,7 +23,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 .v-btn__content{
   color:white;
@@ -26,5 +30,11 @@ export default {
 .v-toolbar__title{
   font-style: italic;
   font-weight: bold;
+}
+.layout{
+  margin-top: 50px;
+}
+.signBtn{
+  color: white;
 }
 </style>
